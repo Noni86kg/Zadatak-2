@@ -1,0 +1,376 @@
+:root {
+    --pink: rgb(133, 95, 177);
+    --lightPink: rgb(217, 184, 255);
+    --hoverPink: rgb(177, 139, 221);
+    --green: rgb(77, 150, 168);
+    --lightGreen: rgb(143, 227, 249);
+    --hoverGreen: rgb(113, 192, 212);
+    --black: rgb(40, 40, 61);
+    --gray: rgb(135, 135, 157);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--gray);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.overline {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    color: var(--green);
+    font-weight: 900;
+}
+h1 {
+    font-size: 64px;
+    line-height: 64px;
+    color: var(--black);
+}
+h2 {
+    font-size: 40px;
+    line-height: 44px;
+    color: var(--black);
+}
+button {
+    border: none;
+    color: white;
+    font-weight: 800;
+}
+button:hover {
+    transition: .5s ease;
+    cursor: pointer;
+}
+.btnGreen {
+    background: var(--green);
+    width: 193px;
+    height: 58px;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+.btnGreen span {
+    color: var(--lightGreen);
+}
+.btnGreen:hover {
+    background: var(--hoverGreen);
+}
+.btnPink {
+    background: var(--pink);
+    width: 139px;
+    height: 58px;
+    border-radius: 40px;
+}
+.btnPink span {
+    color: var(--lightPink);
+}
+.btnPink:hover {
+    background: var(--hoverPink);
+}
+/******************
+Top
+******************/
+.top {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.circles {
+    display: flex;
+    align-self: center;
+    transform: rotate(-45deg);
+    margin-right: 5px;
+}
+#circle1 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: var(--green);
+}
+#circle2 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: var(--pink);
+    margin-left: 5px;
+}
+.top h5 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--black);
+}
+/******************
+Header
+******************/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 0;
+    width: 105%;
+    position: relative;
+    left: -3%;
+}
+header img {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+header section{
+    display: flex;
+    flex-direction: column;
+    width: calc(50%/6);
+    text-align: center;
+}
+header section:nth-child(2) {
+    position: relative;
+    top: -70px;
+}
+header section:nth-child(6) {
+    position: relative;
+    bottom: -70px;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+.center p {
+    padding: 50px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+/******************
+Circle with number
+******************/
+.circleWithNum {
+    display: flex;
+    justify-content: center;
+}
+.num01 {
+    padding: 100px 0 50px 0;
+}
+.circleWithNum p {
+    border-radius: 50%;
+    border: 2px solid rgba(135, 135, 157, .25);
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+.circleWithNum::before {
+    display: block;
+    content: "";
+    height: 84px;
+    width: 2px;
+    background-color: rgba(135, 135, 157, .25);
+    position: relative;
+    top: -84px;
+    right: -28px;
+}
+/******************
+Pictures
+******************/
+.pictures {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+.pictures div {
+    margin: 20px;
+} 
+.pictures img {
+    width: 100%;
+    border-radius: 15px;
+}
+/******************
+Main
+******************/
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main h2 {
+    padding: 10px 0;
+}
+.main p {
+    padding: 30px 0;
+}
+/******************
+Circle with number 2
+******************/
+.Num02 {
+    position: relative;
+    bottom: -56px;
+    z-index: 99;
+}
+/******************
+Footer
+******************/
+Footer {
+    background-image: linear-gradient(rgba(77, 150, 168, 0.8), rgba(77, 150, 168, 0.8)),url(assets/desktop/image-footer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 200px 0;
+}
+.container div {
+    flex: 1;
+}
+.container div:nth-child(2) p{
+    padding: 0 50px;
+}
+.container div:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+.container h2 {
+    color: white;
+}
+.container .btnPink {
+    width: 193px;
+    height: 58px;
+}
+/******************
+responsive tablet
+******************/
+@media(max-width: 1200px) {
+    header {
+        flex-wrap: wrap;
+        width: 115%;
+        left: -7%;
+        padding: 100px 0 25px 0;
+    }
+    header section:nth-child(1) {
+        order: 1;
+    }
+    header section:nth-child(2) {
+        order: 2;
+    }
+    header section:nth-child(3) {
+        order: 3;
+    }
+    header section:nth-child(4) {
+        order: 7;
+    }
+    header section:nth-child(5) {
+        order: 4;
+    }
+    header section:nth-child(6) {
+        order: 5;
+    }
+    header section:nth-child(7) {
+        order: 6;
+    }
+    header section {
+        width: calc(100%/6);
+    }
+    .center {
+        padding: 100px 0 50px 0;
+        width: 100%;
+    }
+    header section:nth-child(6) {
+        position: relative;
+        bottom: 0px;
+    }
+    header section:nth-child(5),
+    header section:nth-child(7) {
+        position: relative;
+        top: -70px;
+    }
+    .center p {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .pictures {
+        width: 90vw;
+    }
+    .pictures div {
+        margin: 1vw;
+    }
+    .main {
+        padding: 50px 0 75px 0;
+        width: 80%;
+    }
+    .main h2 {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .container {
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .container h2 {
+        padding: 0 75px;
+    }
+    .container div:nth-child(2) p {
+        padding: 50px 0;
+    }
+}
+/******************
+responsive tablet
+******************/
+@media(max-width: 767px) {
+    header section img {
+        height: 15vw;
+        width: 15vw;
+    }
+    .center {
+        width: 100%;
+    }
+    .center h1 {
+        margin: 0 auto;
+        width: 65%;
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 50px;
+    }
+    .center p {
+        width: 67%;
+        padding: 25px 0;
+    }
+    .center .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .center .btnPink {
+        margin-top: 25px;
+    }
+    .pictures {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pictures div {
+        width: 43vw;
+    }
+}
