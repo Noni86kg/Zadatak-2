@@ -116,9 +116,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 100px 0;
-    width: 105%;
+    width: 104%;
     position: relative;
-    left: -3%;
+    left: -2%;
 }
 header img {
     height: 110px;
